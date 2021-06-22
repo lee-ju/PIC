@@ -1,4 +1,4 @@
-# PIC ([Patent with Indirect Citation](https://doi.org/10.3390/su13020820))
+# PIC ([Patent with Indirect Connection](https://doi.org/10.3390/su13020820))
 ## Installation
 
 `pip install git+https://github.com/lee-ju/PIC.git`
