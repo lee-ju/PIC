@@ -14,6 +14,11 @@ from techflow.pic import pic_utils
 ```
 
 ## Usage
+|Patent Id|Applicant Date|Forward Citation|
+|---------|--------------|----------------|
+|A|2017.07.15|D|
+|B|2010.05.07|A, E|
+|C|2005.02.10|B, F|
 
 ```python
 import pandas as pd
