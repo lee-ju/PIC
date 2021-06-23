@@ -1,7 +1,33 @@
+<!-- #region -->
 # PIC ([Patent with Indirect Connection](https://doi.org/10.3390/su13020820))
 ## Installation
 
 `pip install git+https://github.com/lee-ju/PIC.git`
+
+#### [Patents with Indirect Connection](https://doi.org/10.3390/su13020820)
+
+## Usage
+
+```python
+import pandas as pd
+
+from_cam = ['A', 'B', 'B', 'C', 'C']
+to_cam = ['D', 'A', 'E', 'B', 'F']
+
+from_sam = ['A']
+to_sam = ['C']
+
+repo = {'A':2017, 'B':2010, 'C':2005}
+
+pu = pic_utils(from_cam, to_cam, from_sam, to_sam, repo, direct=True)
+
+pic_E, pic_L = pu.explorer(max_date=20)
+pic = {'P_E': pic_E, 'P_L': pic_L}
+df_pic = pd.DataFrame(pic)
+
+CS_net = pu.cs_net(pic_E, pic_L, fs=[3, 3], with_labels=True,
+                   node_size=300, font_size=12, seed=10)
+```
 
 ## Parameters
     
@@ -25,3 +51,4 @@
     4. `node_size`: Size of nodes. (default: 100)
     5. `font_size`: Size of labels. (default: 12)
     6. `seed`: Seed for random visualization. (default: 10)
+<!-- #endregion -->

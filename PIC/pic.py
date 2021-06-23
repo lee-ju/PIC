@@ -126,3 +126,26 @@ class pic_utils:
         plt.show()
 
         return self.CS_net
+
+
+if __name__ == '__main__':
+    import pandas as pd
+
+    from_cam = ['A', 'B', 'B', 'C', 'C']
+    to_cam = ['D', 'A', 'E', 'B', 'F']
+
+    from_sam = ['A']
+    to_sam = ['C']
+
+    repo = {'A':2017, 'B':2010, 'C':2005}
+
+    pu = pic_utils(from_cam, to_cam, from_sam, to_sam, repo, direct=True)
+    
+    pic_E, pic_L = pu.explorer(max_date=20)
+    pic = {'P_E': pic_E, 'P_L': pic_L}
+    
+    df_pic = pd.DataFrame(pic)
+    print(df_pic)
+
+    CS_net = pu.cs_net(pic_E, pic_L, fs=[3, 3], with_labels=True,
+                       node_size=300, font_size=12, seed=10)
