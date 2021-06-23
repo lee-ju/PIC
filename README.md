@@ -4,7 +4,14 @@
 
 `pip install git+https://github.com/lee-ju/PIC.git`
 
-#### [Patents with Indirect Connection](https://doi.org/10.3390/su13020820)
+## Note (see [techflow](https://github.com/lee-ju/techflow#patents-with-indirect-connection))
+
+`PIC belongs to techflow>=0.0.2`
+
+```python
+# in techflow>=0.0.2
+from techflow.pic import pic_utils
+```
 
 ## Usage
 
