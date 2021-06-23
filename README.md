@@ -14,20 +14,24 @@ from techflow.pic import pic_utils
 ```
 
 ## Usage
-|Patent Id|Applicant Date|Forward Citation|
-|---------|--------------|----------------|
-|A|2017.07.15|D|
-|B|2010.05.07|A, E|
-|C|2005.02.10|B, F|
+#### `Example` (see [PIC](https://github.com/lee-ju/techflow#patents-with-indirect-connection))
+|Patent Id|Applicant Date|Forward Citation|Abstract|
+|---------|--------------|----------------|--------|
+|A|2017.07.15|D|Vehicle ...|
+|B|2010.05.07|A, E|Autonomous ...|
+|C|2005.02.10|B, F|Brake system ...|
+
 
 ```python
 import pandas as pd
 
+# Citation
 from_cam = ['A', 'B', 'B', 'C', 'C']
 to_cam = ['D', 'A', 'E', 'B', 'F']
 
-from_sam = ['A']
-to_sam = ['C']
+# Similarity
+from_sam = ['A', 'B']
+to_sam = ['C', 'C']
 
 repo = {'A':2017, 'B':2010, 'C':2005}
 
