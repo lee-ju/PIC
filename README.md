@@ -28,7 +28,14 @@ df_pic = pd.DataFrame(pic)
 CS_net = pu.cs_net(pic_E, pic_L, fs=[3, 3], with_labels=True,
                    node_size=300, font_size=12, seed=10)
 ```
+```python
+[Out]:
 
+100%|██████████| 1/1 [00:00<00:00, 11366.68it/s]
+  P_E P_L
+0   C   A
+![pic_fig](imgs/pic_fig.png)
+```
 ## Parameters
     
 #### `PIC` (see: [PIC](https://doi.org/10.3390/su13020820))
