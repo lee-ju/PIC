@@ -134,8 +134,8 @@ if __name__ == '__main__':
     from_cam = ['A', 'B', 'B', 'C', 'C']
     to_cam = ['D', 'A', 'E', 'B', 'F']
 
-    from_sam = ['A']
-    to_sam = ['C']
+    from_sam = ['A', 'B']
+    to_sam = ['C', 'C']
 
     repo = {'A':2017, 'B':2010, 'C':2005}
 
