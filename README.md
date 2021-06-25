@@ -23,6 +23,7 @@ from techflow.pic import pic_utils
 
 
 ```python
+from PIC import pic_utils
 import pandas as pd
 
 # Citation
