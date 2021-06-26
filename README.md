@@ -6,7 +6,7 @@
 
 ## Note (see [techflow](https://github.com/lee-ju/techflow#patents-with-indirect-connection))
 
-`PIC belongs to techflow>=0.0.2`
+`PIC can be used in techflow>=0.0.2.`
 
 ```python
 # in techflow>=0.0.2
