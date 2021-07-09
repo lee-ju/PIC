@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='PIC',
-    version='0.0.3',
+    version='0.0.4',
     description='Patent with Indirect Citation',
     url='https://github.com/lee-ju/PIC.git',
     author='Juhyun Lee',
