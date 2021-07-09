@@ -64,6 +64,10 @@ class pic_utils:
                 for idx_e in idx_E:
                     if self.to_cam[idx_e] == L:
                         chk += 1
+                        break
+                    else:
+                        pass
+                    
                 if chk == 0:
                     F1 = [self.to_cam[f] for f in idx_E]
 
@@ -85,7 +89,7 @@ class pic_utils:
                 pass
             
         d = {'P_E': self.pic_E, 'P_L': self.pic_L}
-        pd.DataFrame(d)
+        return_df = pd.DataFrame(d)
         return_df_dupdrop = return_df.drop_duplicates()
         return_pic_E = return_df_dupdrop['P_E']
         return_pic_L = return_df_dupdrop['P_L']
